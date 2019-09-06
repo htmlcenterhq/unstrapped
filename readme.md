@@ -1,5 +1,7 @@
 # Strapped WordPress Theme Framework
 
+[![Build Status](https://travis-ci.org/htmlcenterhq/strapped.svg?branch=master)](https://travis-ci.org/htmlcenterhq/strapped)
+
 ## About
 
 Strapped is a WordPress theme framework based on the solid Bootstrap 4 UI source code and the best WordPress developer productivity practices. The goal for this framework is to provide solid reference project for WordPress developers who are looking for the best productivity and automation practices.
