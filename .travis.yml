@@ -40,4 +40,4 @@ script:
     # Run the theme through JavaScript Code Style checker
     # - jscs .
     # WordPress Coding Standards
-    ./test.sh
+    - ./test.sh
