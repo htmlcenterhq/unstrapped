@@ -10,17 +10,17 @@
  *
  * @package strapped
  */
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
 
-<?php 
-
-if ( is_front_page() && is_home() ) :
-    // front home page 
-endif; 
+<?php
+// if ( is_front_page() && is_home() ) :
+//
+// endif;
 ?>
 
 <div class="wrapper" id="index-wrapper">
@@ -31,24 +31,24 @@ endif;
 
 			<main class="site-main" id="main">
 
-				<?php if ( have_posts() ) : 
+				<?php if ( have_posts() ) :
 
 					/* Start the Loop */
-					while ( have_posts() ) : the_post();	
+                    while ( have_posts() ) : the_post();
+
 						/*
 						 * Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
+
                     endwhile;
-                 
-                else :                
-                    // no posts
-                endif; 
+
+                endif;
                 ?>
 
 			</main><!-- #main -->
-            
+
 		</div><!-- .row -->
 
 	</div><!-- #content -->

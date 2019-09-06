@@ -1,0 +1,6 @@
+# composer
+composer.phar
+/vendor/
+
+# npm
+node_modules/

@@ -12,6 +12,15 @@ You can use this framework as single WordPress theme, or as a parent theme to yo
 - Provides tools and best practices to minify JS/CSS to improve site speed.
 - Includes continuous integration setup to speedup the testing and developer productivity.
 
+## How
+
+### Composer
+
+Composer is used to manage libraries for PHP code queslity and Wordpress coding standards. In order to install all relevant composer dependencies make sure you have [composer installed on development machine](https://getcomposer.org/doc/00-intro.md). And run the following
+
+    composer install
+    ./vendor/bin/phpcs -p -s -n . --standard=./phpcs.xml
+
 ## License
 
 Strapped WordPress theme, Copyright 2019 Saulius Zukauskas.
