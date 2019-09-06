@@ -1,6 +1,4 @@
 
-# check for PHP syntax errors.
-# find . \( -name '*.php' \) -exec php -lf {} \;
 # check with JSHint
 #jshint .
 # Run the theme through JavaScript Code Style checker
