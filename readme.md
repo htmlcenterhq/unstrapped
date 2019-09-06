@@ -19,7 +19,7 @@ You can use this framework as single WordPress theme, or as a parent theme to yo
 Composer is used to manage libraries for PHP code queslity and Wordpress coding standards. In order to install all relevant composer dependencies make sure you have [composer installed on development machine](https://getcomposer.org/doc/00-intro.md). And run the following
 
     composer install
-    ./vendor/bin/phpcs -p -s -n . --standard=./phpcs.xml
+    ./test.sh
 
 ## License
 
