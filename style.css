@@ -1,0 +1,22 @@
+/*
+Theme Name: Strapped
+Theme URI: https://github.com/htmlcenterhq/strapped
+Author: HTMLCenter
+Author URI: http://www.htmlcenter.com
+GitHub Theme URI: https://github.com/htmlcenterhq/strapped
+Description: Strapped WordPress theme combines best bits of Bootstrap 4 UI framework and the simple WordPress theme template structure. This theme is aimed at developer productivity. The purpose - to provide WordPress developers robust theme development framework with the minimal effort. We use tools like Gulp and npm to do the work and help achieve productivity.
+Version: 0.0.2
+License: Strapped WordPress Theme, Copyright 2019 HTMLCenter
+Strapped WordPress theme is distributed under the terms of the GNU GPL version 2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: strapped
+Tags: bootstrap4, one-column, custom-menu, featured-images, theme-options, translation-ready
+*/
+
+/*
+This file is used to identify the theme metadata for WordPress.
+The actual theme CSS styles are loaded from /css/theme.css
+The related source SASS files are located in /sass/ (in developer build).
+
+Happy coding!
+*/
