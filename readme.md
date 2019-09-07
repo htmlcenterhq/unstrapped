@@ -31,6 +31,6 @@ Composer is used to manage libraries for PHP code queslity and Wordpress coding 
 
 ## License
 
-Strapped WordPress theme, Copyright 2019 HTMLCenter.
+Strapped WordPress theme by [htmlcenter.com](https://www.htmlcenter.com). Copyright 2019
 
 Strapped theme is distributed under the terms of the [GNU GPL version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html). By contributing to this open source project, you agree that all your contributions will be licensed under this license.

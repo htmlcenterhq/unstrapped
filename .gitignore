@@ -8,3 +8,5 @@ node_modules/
 # project
 src/
 dist/
+sass/
+css/

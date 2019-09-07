@@ -1,6 +1,13 @@
 // Defining requirements
 var gulp = require('gulp');
 var del = require('del');
+var plumber = require('gulp-plumber');
+var sourcemaps = require('gulp-sourcemaps');
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+
+var autoprefixer = require('autoprefixer');
+
 
 // Configuration file to keep your code DRY
 var cfg = require('./gulpconfig.json');
@@ -11,7 +18,6 @@ var paths = cfg.paths;
 // copy all needed dependency assets files from bower_component assets
 // to themes /js, /scss and /fonts folder. 
 // this task runs after npm install finished
-
 gulp.task('copy-assets', (done) => {
 	// copy Bootstrap 4 JS files
 	gulp
@@ -43,19 +49,40 @@ gulp.task('clean-src', () => {
 	return del(`${paths.dev}`);
 });
 
+// Run: gulp sass
+// Compiles SCSS files in CSS
+gulp.task('compile-sass', () => {
+	var stream = gulp
+		.src(paths.sass + '/*.scss')
+		.pipe(
+			plumber({
+				errorHandler: function(err) {
+					console.log(err);
+					this.emit('end');
+				}
+			})
+		)
+		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(sass({ errLogToConsole: true }))
+		.pipe(postcss([autoprefixer()]))
+		.pipe(sourcemaps.write(undefined, { sourceRoot: null }))
+		.pipe(gulp.dest(paths.css));
+	return stream;
+});
+
 // Delete /dist folder
 gulp.task('clean-dist-destination', () => {
-	return del(`${paths.dist}`);
+	return del('dist');
 });
 
 // Package all required files for distribution as Wordpress theme
 gulp.task('copy-dist-files', (done) => {	
 	gulp.src([
-		'*',
-		`!${paths.vendor}`,
-		`!${paths.node}`,
-		`!${paths.dev}`,
-		`!${paths.sass}`,
+		'./**',
+		'!./node_modules/**',
+		'!./sass/**',
+		'!./src/**',
+		'!./vendor/**',
 		'!readme.md',
 		'!package.json',
 		'!package-lock.json',
