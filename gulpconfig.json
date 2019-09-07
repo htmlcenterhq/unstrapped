@@ -5,7 +5,7 @@
 		"img": "./img",
 		"imgsrc": "./src/img",
 		"sass": "./sass",
-		"node": "./node_modules/",
+		"node": "./node_modules",
 		"dev": "./src",
 		"dist": "./dist",
 		"vendor": "./vendor"

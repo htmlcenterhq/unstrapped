@@ -6,4 +6,5 @@ composer.phar
 node_modules/
 
 # project
-src
+src/
+dist/

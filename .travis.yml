@@ -27,7 +27,7 @@ env:
 # e.g. copy database configurations, environment variables, etc.
 # Failures in this section will result in build status 'errored'.
 before_script:
-    # Set up WordPress installation.
+    # validate if all dependencies installing
     - composer install
     - npm install
 
