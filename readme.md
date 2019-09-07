@@ -14,7 +14,13 @@ You can use this framework as single WordPress theme, or as a parent theme to yo
 - Provides tools and best practices to minify JS/CSS to improve site speed.
 - Includes continuous integration setup to speedup the testing and developer productivity.
 
-## How
+## Usage
+
+### Npm
+
+This theme is using [npm](https://www.npmjs.com/) to manage its source dependencies from Bootstrap 4 and Font Awesome. To download all the dependent source code use
+
+    npm install
 
 ### Composer
 
