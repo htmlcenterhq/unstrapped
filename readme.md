@@ -1,24 +1,25 @@
-# Strapped WordPress Theme Framework
+# Strapped - WordPress theme skeleton project
 
 [![Build Status](https://travis-ci.org/htmlcenterhq/strapped.svg?branch=master)](https://travis-ci.org/htmlcenterhq/strapped)
 
 ## About
 
-Strapped is a WordPress theme framework based on the best WordPress developer productivity practices and solid Bootstrap 4 UI framework.  This framework provides WordPress developers with strong automation and productivity practices.
+Strapped is a WordPress theme skeleton project based on the WordPress developer productivity best practices and [Bootstrap 4 UI toolkit](https://getbootstrap.com/). Skeleton project provides WordPress developers with the strong automation and productivity practices.
 
-You can use Strapped framework as single standalone WordPress theme, or as a parent theme for multiple WordPress theme projects. [Strapped](https://www.htmlcenter.com/themes/strapped) includes tools like Gulp, Npm, Sass and Composer to help you build themes faster and with less bugs.
+You can use Strapped theme as single standalone WordPress theme, or as a parent theme for multiple WordPress projects. [Strapped](https://www.htmlcenter.com/themes/strapped) includes tools like Gulp, Npm, Sass, Composer and Docker. It helps you build Wordpress projects faster and reduces number of code bugs.
 
 ## Basic Features
 
 - Combines Bootstrap 4 HTML/CSS/JS files with simple and powerful WordPress skelethon project.
-- Provides tools and best practices to minify JS/CSS to improve site speed.
-- Includes continuous integration setup to speedup the testing and developer productivity.
+- Tools to automate management of JS / CSS / SASS dependencies.
+- Tools for continuous integration setup to speedup the testing and developer productivity.
+- Integrated Docker for local Wordpress theme testing and development. 
 
 ## Usage
 
 ### Npm
 
-This theme is using [npm](https://www.npmjs.com/) to manage its source dependencies from Bootstrap 4 and Font Awesome. To download all the dependent source code use
+This theme is using [npm](https://www.npmjs.com/) to manage its source dependencies (Bootstrap 4 , Font Awesome). To download all the dependency source code use
 
     npm install
 
@@ -28,6 +29,13 @@ Composer is used to manage libraries for PHP code queslity and Wordpress coding 
 
     composer install
     ./test.sh
+
+### Gulp
+
+Gulp is used as a task manager for working with source files, setting up the project and building the Strapped theme for distribution. Few of the commands supported by Strapped
+
+    gulp dist
+    gulp compile-sass
 
 ## License
 
