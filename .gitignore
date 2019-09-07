@@ -10,3 +10,8 @@ src/
 dist/
 sass/
 css/
+
+# docker volumes
+docker/strapped
+docker/db_data
+docker/wp-content

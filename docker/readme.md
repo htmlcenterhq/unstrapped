@@ -21,3 +21,4 @@ Useful docker-compose commands
 
     docker-compose logs -f
     docker-compose ps
+    docker exec -it docker_wordpress_1 ls -l /var/www/html
