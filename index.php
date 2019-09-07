@@ -17,12 +17,6 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 
-<?php
-// if ( is_front_page() && is_home() ) :
-//
-// endif;
-?>
-
 <div class="wrapper" id="index-wrapper">
 
 	<div id="content" tabindex="-1">
@@ -31,16 +25,18 @@ get_header();
 
 			<main class="site-main" id="main">
 
-				<?php if ( have_posts() ) :
+                <?php
+                if ( have_posts() ) :
 
-					/* Start the Loop */
-                    while ( have_posts() ) : the_post();
+                    /* Start the Loop */
+                    while ( have_posts() ) :
+                        the_post();
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
+                        /*
+                        * Include the Post-Format-specific template for the content.
+                        * If you want to override this in a child theme, then include a file
+                        * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                        */
 
                     endwhile;
 
@@ -55,4 +51,5 @@ get_header();
 
 </div><!-- #index-wrapper -->
 
-<?php get_footer();
+<?php
+get_footer();

@@ -1,8 +1,13 @@
+#!/bin/bash
 
-# check with JSHint
+# Script to run all configured testing against the Strapped theme code
+# Author: https://github.com/sauliuz
+# Home: https://www.htmlcenter.com/
+
+# JavaScript code quality
 #jshint .
-# Run the theme through JavaScript Code Style checker
-#jscs .
+
+# ESLint code quality
 
 # WordPress Coding Standards
 # @link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
