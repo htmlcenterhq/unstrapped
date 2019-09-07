@@ -29,6 +29,7 @@ env:
 before_script:
     # Set up WordPress installation.
     - composer install
+    - npm install
 
 # Run test script commands.
 # Default is specific to project language.
