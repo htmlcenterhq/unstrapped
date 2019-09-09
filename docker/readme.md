@@ -21,4 +21,5 @@ Useful docker-compose commands
 
     docker-compose logs -f
     docker-compose ps
-    docker exec -it docker_wordpress_1 ls -l /var/www/html
+    docker exec -it $(docker-compose ps -q wordpress) ls -l /var/www/html
+    docker exec -i $(docker-compose ps -q mysql) mysql -uwordpress -pwordpress wordpress < data.sql
