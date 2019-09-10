@@ -32,7 +32,7 @@ Composer is used to manage libraries for PHP code queslity and Wordpress coding 
 
 ### Gulp
 
-Gulp is used as a task manager for working with source files, setting up the project and building the Unstrapped theme for distribution. Few of the commands supported by Unstrapped
+Gulp is used as a task manager for working with source files, setting up the project and building the Unstrapped theme for distribution. Few of the commands supported by framework
 
     gulp dist
     gulp compile-sass
