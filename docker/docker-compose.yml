@@ -1,3 +1,9 @@
+#
+# docker compose setup for provisioning 
+# local Wordpress development environment
+# author: htmlcenter.com
+# 
+
 version: '3.3'
 
 services:
@@ -20,8 +26,7 @@ services:
        - "8000:80"
      restart: always
      volumes:
-      - ./wp-content:/var/www/html/wp-content:rw
-      - ./unstrapped:/var/www/html/wp-content/themes/unstrapped:ro
+      - ./html:/var/www/html:rw
      environment:
        WORDPRESS_DB_HOST: mysql:3306
        WORDPRESS_DB_USER: wordpress

@@ -12,6 +12,9 @@ sass/
 css/
 
 # docker volumes
-docker/strapped
 docker/db_data
-docker/wp-content
+docker/html
+
+# various
+.DS_Store
+data.sql
