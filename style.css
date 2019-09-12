@@ -1,22 +1,23 @@
 /*
-Theme Name: Strapped
+Theme Name: Unstrapped
 Theme URI: https://github.com/htmlcenterhq/unstrapped
 Author: Htmlcenter
 Author URI: https://www.htmlcenter.com
 GitHub Theme URI: https://github.com/htmlcenterhq/unstrapped
-Description: Unstrapped is a WordPress theme skeleton project. Based on the WordPress developer productivity best practices and Bootstrap 4 UI toolkit. 
+Description: Unstrapped is a Bootstrap 4 based, minimal WordPress theme. Its also a skeleton project for building multiple Wordpress themes and templates following the best Wordpress developer productivity practices. 
 Version: 0.0.3
 License: Unstrapped WordPress Theme, Copyright 2019 htmlcenter.com
 Unstrapped WordPress theme is distributed under the terms of the GNU GPL version 2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: unstrapped
-Tags: unstrapped, bootstrap, bootstrap4, one-column, custom-menu, theme-options, translation-ready
+Tags: unstrapped, bootstrap, bootstrap4, responsive, mobile-first
 */
 
 /*
-This file is used to identify the theme metadata for WordPress.
-The actual theme CSS styles are loaded from /css/theme.css
-The related source SASS files are located in /sass/ (in developer build).
+This file is used to identify the theme metadata for WordPress.org
 
-Happy coding!
+Do not add theme CSS styles here. The actual theme CSS styles are loaded from /css/theme.css
+The related style source SASS files are located in /sass/ (only for developer distribution).
+
+Code is poetry!
 */

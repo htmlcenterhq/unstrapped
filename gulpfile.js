@@ -82,6 +82,7 @@ gulp.task('copy-dist-files', (done) => {
 		'!./node_modules/**',
 		'!./sass/**',
 		'!./src/**',
+		'!./docker/**',
 		'!./vendor/**',
 		'!readme.md',
 		'!package.json',
