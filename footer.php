@@ -3,8 +3,9 @@
  * The template for displaying the footer
  *
  * @package unstrapped
- * 
+ *
  */
+
 ?>
 
     <footer class="blog-footer">
@@ -28,7 +29,7 @@
       });
     </script>
     
-    <?php wp_footer(); // triger WP footer load ?>
+    <?php wp_footer(); // triger WP footer load. ?>
 
     </body>
 </html>

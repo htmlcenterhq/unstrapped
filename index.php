@@ -168,5 +168,5 @@ get_header();
 
     </main><!-- /.container -->
 
-    <?php get_footer(); ?>
-
+    <?php
+    get_footer();

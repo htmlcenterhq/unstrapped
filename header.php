@@ -3,11 +3,11 @@
  * The template for displaying the header
  *
  * @package unstrapped
- * 
+ *
  */
+
 ?>
 
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -26,3 +26,4 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet"> 
     <?php wp_head(); ?>
   </head>
+

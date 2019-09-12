@@ -21,6 +21,7 @@
 
     <!-- Ignore the vendor directory -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/docker/*</exclude-pattern>
     <exclude-pattern>*/woocommerce/*</exclude-pattern>
     <exclude-pattern>*/src/*</exclude-pattern>
     <exclude-pattern>*/dist/*</exclude-pattern>
@@ -38,8 +39,11 @@
         <exclude name="WordPress.WP.GlobalVariablesOverride.Prohibited"/>
         <exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
         <exclude name="WordPress.WP.I18n.NonSingularStringLiteralText"/>
+        <exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedStylesheet"/>
+        <exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedScript"/>
 
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
+        <exclude name="Generic.Commenting.DocComment.SpacingAfter"/>
     </rule>
 
     <!--
