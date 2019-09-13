@@ -75,8 +75,13 @@ gulp.task('clean-dist-destination', () => {
 	return del('dist');
 });
 
+// Delete /docker/html/wp-content/themes/unstrapped folder
+gulp.task('clean-dev-destination', () => {
+	return del('docker/html/wp-content/themes/unstrapped');
+});
+
 // Package all required files for distribution as Wordpress theme
-gulp.task('copy-dist-files', (done) => {	
+gulp.task('package-dist-files', (done) => {	
 	gulp.src([
 		'./**',
 		'!./node_modules/**',
@@ -84,6 +89,7 @@ gulp.task('copy-dist-files', (done) => {
 		'!./src/**',
 		'!./docker/**',
 		'!./vendor/**',
+		'!./dist/**',
 		'!readme.md',
 		'!package.json',
 		'!package-lock.json',
@@ -102,9 +108,41 @@ gulp.task('copy-dist-files', (done) => {
 	done();
 });
 
+// Package all required files for distribution to dev Wordpress location
+gulp.task('package-dev-dist-files', (done) => {	
+	gulp.src([
+		'./**',
+		'!./node_modules/**',
+		'!./sass/**',
+		'!./src/**',
+		'!./docker/**',
+		'!./vendor/**',
+		'!./dist/**',
+		'!readme.md',
+		'!package.json',
+		'!package-lock.json',
+		'!gulpfile.js',
+		'!gulpconfig.json',
+		'!composer.json',
+		'!composer.lock',
+		'!test.sh',
+		'!.travis.yml',
+		'!jshintignore',
+		'!phpcs.xml'
+	],{ buffer: true })
+	.pipe(gulp.dest(paths.dev_dist));
+	
+	// done
+	done();
+});
+
 // Run: gulp dist
 // re-package all required files for distribution as Wordpress theme
-gulp.task('dist', gulp.series('clean-dist-destination','copy-dist-files'));
+gulp.task('dist', gulp.series('clean-dist-destination','package-dist-files'));
+
+// Run: gulp dist-dev
+// re-package all required files for distribution as Wordpress theme
+gulp.task('dist-dev', gulp.series('clean-dev-destination','package-dev-dist-files'));
 
 // Default task
 gulp.task('default', gulp.series('clean-src','copy-assets'));

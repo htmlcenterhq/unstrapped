@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to run all configured testing against the Strapped theme code
+# Script to run all configured testing against the Unstrapped theme code
 # Author: https://github.com/sauliuz
 # Home: https://www.htmlcenter.com/
 

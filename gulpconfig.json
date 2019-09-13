@@ -8,6 +8,7 @@
 		"node": "./node_modules",
 		"dev": "./src",
 		"dist": "./dist/unstrapped",
+		"dev_dist":"docker/html/wp-content/themes/unstrapped",
 		"vendor": "./vendor"
 	}
 }
