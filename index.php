@@ -23,7 +23,7 @@ get_header();
             <a class="text-muted" href="#">Subscribe</a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="<?php bloginfo('home'); ?>">Unstrapped</a>
+            <a class="blog-header-logo text-dark" href="<?php bloginfo('url'); ?>">Unstrapped</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#">
@@ -63,18 +63,16 @@ get_header();
             
             <div class="col-md-8 blog-main">
           
-                <h3 class="pb-3 mb-4 font-italic border-bottom">
-                    Our Blog Feed
-                </h3>
+              <h3 class="pb-3 mb-4 font-italic border-bottom">
+                  Our Blog Feed
+              </h3>
 
-                <!-- blog posts -->
+              <!-- blog posts -->
                 <?php
-                if ( have_posts() ) :
-
-                  /* Start the Loop */
-                  while ( have_posts() ) :
+                  if ( have_posts() ) :
+                    while ( have_posts() ) :
                       the_post();
-                  ?>
+                    ?>
 
                     <div class="blog-post">
                       <h2 class="blog-post-title"><?php the_title(); ?></h2>
@@ -86,12 +84,12 @@ get_header();
                       
                     </div><!-- /.blog-post -->                  
 
-                  <?
+                  <?php
                   endwhile; // End the loop.
-                
+
                 endif;
-                ?>                    
-                    
+                ?>
+                                    
                 <nav class="blog-pagination">
                     <a class="btn btn-outline-primary" href="#">Older</a>
                     <a class="btn btn-outline-secondary disabled" href="#">Newer</a>

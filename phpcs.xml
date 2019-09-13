@@ -44,6 +44,11 @@
 
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
         <exclude name="Generic.Commenting.DocComment.SpacingAfter"/>
+        <exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+        <exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+
+        <exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
+        <exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>       
     </rule>
 
     <!--
@@ -83,6 +88,7 @@
         <exclude name="PHPCompatibility.PHP.NewFunctions.array_replace_recursiveFound"/>
 
         <exclude name="PHPCompatibility.PHP.NewInterfaces.jsonserializableFound"/>
+
     </rule>
 
 </ruleset>

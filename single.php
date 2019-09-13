@@ -18,7 +18,7 @@ get_header();
             <a class="text-muted" href="#">Subscribe</a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="<?php bloginfo('home'); ?>">Unstrapped</a>
+            <a class="blog-header-logo text-dark" href="<?php bloginfo('url'); ?>">Unstrapped</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#">
@@ -74,9 +74,8 @@ get_header();
                       
                     </div><!-- /.blog-post -->                  
 
-                  <?
+                  <?php
                   endwhile; // End the loop.
-                
                 endif;
                 ?>
 
