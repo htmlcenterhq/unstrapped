@@ -21,13 +21,6 @@
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
     
     <?php wp_footer(); // triger WP footer load. ?>
 
