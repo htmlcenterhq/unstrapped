@@ -9,6 +9,26 @@
 		"dev": "./src",
 		"dist": "./dist/unstrapped",
 		"dev_dist":"docker/html/wp-content/themes/unstrapped",
-		"vendor": "./vendor"
+		"vendor": "./vendor",
+		"dist_items":[
+			"./**",
+			"!./node_modules/**",
+			"!./sass/**",
+			"!./src/**",
+			"!./docker/**",
+			"!./vendor/**",
+			"!./dist/**",
+			"!readme.md",
+			"!package.json",
+			"!package-lock.json",
+			"!gulpfile.js",
+			"!gulpconfig.json",
+			"!composer.json",
+			"!composer.lock",
+			"!test.sh",
+			"!.travis.yml",
+			"!jshintignore",
+			"!phpcs.xml"
+		]
 	}
 }
